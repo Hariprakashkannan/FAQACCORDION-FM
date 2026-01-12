@@ -1,0 +1,68 @@
+
+
+  .quest-container > div {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    padding: 14px 0;
+}
+
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    cursor: pointer;
+}
+
+.quest-container {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+
+.heading h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: hsl(292, 42%, 15%);
+}
+
+
+.heading img {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+
+
+p {
+    font-size: 16px;
+    color: hsl(292, 16%, 49%);
+    line-height: 1.6;
+    margin: 0;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.35s ease, opacity 0.3s ease;
+}
+
+
+.show {
+    max-height: 300px; 
+    opacity: 1;
+    margin-top: 10px;
+}
+
+
+.hide {
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+}

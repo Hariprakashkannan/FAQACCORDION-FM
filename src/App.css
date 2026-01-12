@@ -1,0 +1,15 @@
+.container{
+  height: 100vh;
+  background-color: hsl(292, 16%, 49%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./bgdesktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%; 
+}
+
+.container>div{
+  width: 30%;
+}
+
