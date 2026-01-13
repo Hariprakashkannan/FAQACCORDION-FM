@@ -1,8 +1,6 @@
 import "./Faq.css";
-import Quest from "./Quest";
-
+import Quest from "./Quest";   //PARENT COMPONENT
 const Faq = () => {
-
   let Questions = [
     {
       ques: "What is Frontend Mentor, and how will it help me?",
@@ -22,7 +20,6 @@ const Faq = () => {
       answer : "The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members."
     }
   ];
-
   return (
     <section className="faq">
       <div>
@@ -31,12 +28,12 @@ const Faq = () => {
       </div>  
           {Questions.map((e)=>{
             return (
-              <Quest question={e.ques} ans = {e.answer}/>
+              <Quest data={e}/>
             )
-          })}
-       
+          })}  
     </section>
   );
 };
-
 export default Faq;
+
+

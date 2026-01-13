@@ -1,5 +1,6 @@
 import { useState } from "react";
-import "./Quest.css";
+import "./Quest.css";                   //CHILD COMPONENT
+
 
 const Quest = (props) => {
   let [first, setfirst] = useState("hide");
@@ -12,11 +13,12 @@ const Quest = (props) => {
     }
   }
 
+
   return (
     <>
       <div className="quest-container">
         <div className="heading">
-          <h3>{props.question}</h3>
+          <h3>{props.data.ques}</h3>
 
           <img
             src={first == "hide" ? "./plus.svg" : "./minus.svg"}
@@ -26,12 +28,25 @@ const Quest = (props) => {
         </div>
 
       </div>
-      <div>
-        <p className={first}>{props.ans}</p><br />
-        </div>
+    <div>
+
+      {first === "show" &&  <p>{props.data.answer}</p> }
+       </div>
         
     </>
   );
 };
 
 export default Quest;
+
+
+
+
+
+
+
+
+
+
+
+
